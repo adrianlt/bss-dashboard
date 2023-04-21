@@ -1792,7 +1792,9 @@ a {
 }
 
 .bg-lock-screen {
-	background-image: url(../images/login-images/bg-lock-screen.jpg);
+	background: #EFEFBB;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1957,6 +1959,11 @@ a {
 .btn-white {
 	background-color: #fff;
 	border-color: #e7eaf3
+}
+
+.btn-blue {
+	background-color: #0b5ed7;	
+	color:#fff;
 }
 
 .chart-container1 {
