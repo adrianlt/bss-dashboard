@@ -58,17 +58,17 @@ a {
 }
 
 .logo-text {
-	font-size: 22px;
-	margin-left: 10px;
-	margin-bottom: 0;
-	letter-spacing: 1px;
-	color: #008cff
+	font-size: 20px;
+	margin-left: 6px;
+	margin-bottom: 0;	
+	color: #616161;
+	font-weight: 200;
 }
 
 .toggle-icon {
 	font-size: 22px;
 	cursor: pointer;
-	color: #008cff
+	color: #F45050
 }
 
 .topbar {
@@ -222,7 +222,7 @@ a {
 .sidebar-wrapper .metismenu a:active,
 .sidebar-wrapper .metismenu a:focus,
 .sidebar-wrapper .metismenu a:hover {
-	color: #008cff;
+	color: #F45050;
 	text-decoration: none;
 	background: rgb(13 110 253 / .12)
 }
@@ -343,7 +343,7 @@ a {
 	border-radius: 10px;
 	bottom: 20px;
 	right: 12px;
-	background-color: #008cff;
+	background-color: #F45050;
 	z-index: 5
 }
 
@@ -541,7 +541,7 @@ a {
 }
 
 .fm-menu .list-group a:hover {
-	background: #008cff;
+	background: #F45050;
 	color: #fff;
 	transition: all .2s ease-out
 }
@@ -887,7 +887,7 @@ a {
 .invoice header {
 	padding: 10px 0;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #008cff
+	border-bottom: 1px solid #F45050
 }
 
 .invoice .company-details {
@@ -918,7 +918,7 @@ a {
 
 .invoice .invoice-details .invoice-id {
 	margin-top: 0;
-	color: #008cff
+	color: #F45050
 }
 
 .invoice main {
@@ -933,7 +933,7 @@ a {
 
 .invoice main .notices {
 	padding-left: 6px;
-	border-left: 6px solid #008cff;
+	border-left: 6px solid #F45050;
 	background: #e7f2ff;
 	padding: 10px
 }
@@ -965,7 +965,7 @@ a {
 .invoice table td h3 {
 	margin: 0;
 	font-weight: 400;
-	color: #008cff;
+	color: #F45050;
 	font-size: 1.2em
 }
 
@@ -979,7 +979,7 @@ a {
 .invoice table .no {
 	color: #fff;
 	font-size: 1.6em;
-	background: #008cff
+	background: #F45050
 }
 
 .invoice table .unit {
@@ -987,7 +987,7 @@ a {
 }
 
 .invoice table .total {
-	background: #008cff;
+	background: #F45050;
 	color: #fff
 }
 
@@ -1010,9 +1010,9 @@ a {
 }
 
 .invoice table tfoot tr:last-child td {
-	color: #008cff;
+	color: #F45050;
 	font-size: 1.4em;
-	border-top: 1px solid #008cff
+	border-top: 1px solid #F45050
 }
 
 .invoice table tfoot tr td:first-child {
@@ -1174,7 +1174,7 @@ a {
 
 .chat-tab-menu .nav-pills .nav-link.active,
 .chat-tab-menu .nav-pills .show>.nav-link {
-	color: #008cff;
+	color: #F45050;
 	background-color: rgb(0 123 255 / 0%)
 }
 
@@ -1469,8 +1469,8 @@ a {
 }
 
 .nav-primary.nav-tabs .nav-link.active {
-	color: #008cff;
-	border-color: #008cff #008cff #fff
+	color: #F45050;
+	border-color: #F45050 #F45050 #fff
 }
 
 .nav-danger.nav-tabs .nav-link.active {
@@ -1783,6 +1783,47 @@ a {
 	background-attachment: fixed
 }
 
+/*login dashboard*/
+.background-radial-gradient {
+	background-color: hsl(218, 41%, 15%);
+	background-image: radial-gradient(650px circle at 0% 0%,
+			hsl(218, 41%, 35%) 15%,
+			hsl(218, 41%, 30%) 35%,
+			hsl(218, 41%, 20%) 75%,
+			hsl(218, 41%, 19%) 80%,
+			transparent 100%),
+		radial-gradient(1250px circle at 100% 100%,
+			hsl(218, 41%, 45%) 15%,
+			hsl(218, 41%, 30%) 35%,
+			hsl(218, 41%, 20%) 75%,
+			hsl(218, 41%, 19%) 80%,
+			transparent 100%);
+}
+
+#radius-shape-1 {
+	height: 220px;
+	width: 220px;
+	top: -60px;
+	left: -130px;
+	background: radial-gradient(#44006b, #ad1fff);
+	overflow: hidden;
+}
+
+#radius-shape-2 {
+	border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+	bottom: -60px;
+	right: -110px;
+	width: 300px;
+	height: 300px;
+	background: radial-gradient(#44006b, #ad1fff);
+	overflow: hidden;
+}
+
+.bg-glass {
+	background-color: hsla(0, 0%, 100%, 0.9) !important;
+	backdrop-filter: saturate(200%) blur(25px);
+}
+
 .bg-forgot {
 	background-image: url(../images/login-images/bg-forgot-password.jpg);
 	background-size: cover;
@@ -1792,9 +1833,9 @@ a {
 }
 
 .bg-lock-screen {
-	background: #EFEFBB;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #0cebeb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1822,19 +1863,19 @@ a {
 
 
 .btn-inverse-primary {
-	color: #008cff;
+	color: #F45050;
     background-color: rgba(0, 140, 255, 0.18);
     border-color: rgb(209, 234, 255);
 }
 
 .btn-inverse-primary:hover {
-	color: #008cff;
+	color: #F45050;
     background-color: rgba(0, 140, 255, 0.18);
     border-color: rgba(0, 140, 255, 0.18);
 }
 
 .btn-inverse-primary:focus {
-	color: #008cff;
+	color: #F45050;
     background-color: rgba(0, 140, 255, 0.18);
     border-color: rgba(0, 140, 255, 0.18);
 	box-shadow: 0 0 0 .25rem rgba(49, 132, 253, .3)
@@ -1961,9 +2002,29 @@ a {
 	border-color: #e7eaf3
 }
 
-.btn-blue {
-	background-color: #0b5ed7;	
-	color:#fff;
+.btn-modified {
+	width: 300px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-modified:hover {
+  background-color: #5565ee;
+  box-shadow: 0px 15px 20px rgba(79, 109, 241, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 .chart-container1 {
@@ -2354,7 +2415,7 @@ input.search-control-2::placeholder {
 	height: 40px;
 	line-height: 40px;
 	font-size: 24px;
-	background: #008cff;
+	background: #2e2e2e;
 	box-shadow: 0 .3rem .6rem rgba(0, 0, 0, .13);
 	color: #fff;
 	text-align: center;
