@@ -1833,13 +1833,21 @@ a {
 }
 
 .bg-lock-screen {
-	background: #0cebeb;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: url(../images/login-images/bg-lock-screen4.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed
+}
+
+.bg-lock-screen .card{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.11);
 }
 
 .login-separater span {
@@ -1851,6 +1859,10 @@ a {
 	font-size: 12px;
 	color: #cbcbcb;
 	z-index: 1
+}
+
+.btn-action{
+	font-size: 14px !important;
 }
 
 .btn i {
@@ -2010,11 +2022,11 @@ a {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+	background-color: #54d4c3;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 8px 15px rgba(55, 233, 224, 0.377);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
@@ -2022,7 +2034,7 @@ a {
 
 .btn-modified:hover {
   background-color: #5565ee;
-  box-shadow: 0px 15px 20px rgba(79, 109, 241, 0.4);
+	box-shadow: 0px 15px 20px rgba(79, 109, 241, 0.4);  
   color: #fff;
   transform: translateY(-7px);
 }
