@@ -1871,6 +1871,18 @@ border: 1px solid rgba(255, 255, 255, 0.11);
 	font-size: 14px !important;
 }
 
+.button-modified{
+	letter-spacing: 0px !important;
+	padding: 0.3rem !important;
+	border: none;
+}
+
+.borderless{
+	border: none;
+	background: none;
+	font-size: 16px;
+}
+
 .btn i {
 	vertical-align: middle;
 	font-size: 1.3rem;
