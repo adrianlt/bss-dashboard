@@ -32,9 +32,9 @@ a {
 	bottom: 0;
 	left: 0;
 	background: hsla(207, 80%, 59%, 1);
-	background: linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, hsla(343, 93%, 69%, 1) 100%);
-	background: -moz-linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, hsla(343, 93%, 69%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, hsla(343, 93%, 69%, 1) 100%);
+	background: linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, rgb(92, 192, 175) 100%);
+	background: -moz-linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, rgb(92, 192, 175) 100%);
+	background: -webkit-linear-gradient(90deg, hsla(207, 80%, 59%, 1) 0%, hsla(344, 64%, 79%, 1) 50%, rgb(92, 192, 175) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#45A0EA", endColorstr="#ECA9BB", GradientType=1 );
 	border-right: 0 solid #e4e4e4;
 	z-index: 11;
@@ -349,7 +349,7 @@ a {
 	border-radius: 10px;
 	bottom: 20px;
 	right: 12px;
-	background-color: #F45050;
+	background-color: #3a3a3a;
 	z-index: 5
 }
 
