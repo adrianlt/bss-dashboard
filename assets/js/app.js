@@ -68,11 +68,23 @@ $(function() {
 		$("html").addClass("color-header headercolor8"), $("html").removeClass("headercolor1 headercolor2 headercolor4 headercolor5 headercolor6 headercolor7 headercolor3")
 	})
 
-
+   // upload picture admin profile
+	 function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
 
    // sidebar colors 
-
-
     $('#sidebarcolor1').click(theme1);
     $('#sidebarcolor2').click(theme2);
     $('#sidebarcolor3').click(theme3);
