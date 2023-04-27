@@ -306,7 +306,9 @@ a {
 	border-color: #fd3550!important
 }
 
-
+.border-special{
+	border-color: #b4bec269!important
+}
 
 .text-primary {
 	color: #008cff!important
