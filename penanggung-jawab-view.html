@@ -25,6 +25,9 @@
 	<link rel="stylesheet" href="assets/css/dark-theme.css" />
 	<link rel="stylesheet" href="assets/css/semi-dark.css" />
 	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	<!--Sweet Alert Copy to clipboard-->
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
 	<title>BSS Admin Dashboard</title>
 </head>
 
@@ -753,31 +756,47 @@
 										<td>Ruthnaomi, S.Psi., M.Psi, Psikolog</td>
 										<td>1980020111111420</td>										
 										<td><a href="penanggung-jawab-edit.html"><button type="submit" class="btn borderless btn-action bg-gradient-scooter text-white"><i class='bx bx-edit'></i>Ubah</button></a>
-											<button type="submit" class="btn borderless btn-action bg-gradient-burning text-white"><i class='bx bxs-trash'></i>Hapus</button></td>										
+											<button type="button" data-bs-toggle="modal" data-bs-target="#hapusPenanggungjawab" class="btn borderless btn-action bg-gradient-burning text-white"><i class='bx bxs-trash'></i>Hapus</button></td>										
 									</tr>
 									<tr>
 										<td>2</td>
 										<td>Diana, S.STP., M.M</td>
 										<td>1980020111111421</td>										
 										<td><a href="penanggung-jawab-edit.html"><button type="submit" class="btn borderless btn-action bg-gradient-scooter text-white"><i class='bx bx-edit'></i>Ubah</button></a>
-											<button type="submit" class="btn borderless btn-action bg-gradient-burning text-white"><i class='bx bxs-trash'></i>Hapus</button></td>										
+											<button type="button" data-bs-toggle="modal" data-bs-target="#hapusPenanggungjawab" class="btn borderless btn-action bg-gradient-burning text-white"><i class='bx bxs-trash'></i>Hapus</button></td>										
 									</tr>
 									<tr>
 										<td>3</td>
 										<td>You Know Who, S.STP., M.M</td>
 										<td>1980020111111422</td>										
 										<td><a href="penanggung-jawab-edit.html"><button type="submit" class="btn borderless btn-action bg-gradient-scooter text-white"><i class='bx bx-edit'></i>Ubah</button></a>
-											<button type="submit" class="btn borderless btn-action bg-gradient-burning text-white"><i class='bx bxs-trash'></i>Hapus</button></td>										
+											<button type="button" data-bs-toggle="modal" data-bs-target="#hapusPenanggungjawab" class="btn borderless btn-action bg-gradient-burning text-white"><i class='bx bxs-trash'></i>Hapus</button></td>										
 									</tr>
 									<tr>
 										<td>4</td>
 										<td>Joe Rogan, S.Psi., M.Psi, Psikolog</td>
 										<td>1980020111111423</td>									
 										<td><a href="penanggung-jawab-edit.html"><button type="submit" class="btn borderless btn-action bg-gradient-scooter text-white"><i class='bx bx-edit'></i>Ubah</button></a>
-											<button type="submit" class="btn borderless btn-action bg-gradient-burning text-white"><i class='bx bxs-trash'></i>Hapus</button></td>										
+											<button type="button" data-bs-toggle="modal" data-bs-target="#hapusPenanggungjawab" class="btn borderless btn-action bg-gradient-burning text-white"><i class='bx bxs-trash'></i>Hapus</button></td>										
 									</tr>
 								</tbody>							
 							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="hapusPenanggungjawab" tabindex="-1" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Hapus Data?</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">Contoh text di sini text di sini text di sini text di sini text di sini</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" onclick="konfirmHapus()" class="btn btn-primary">Hapus</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -890,6 +909,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<!--end switcher-->
 	<!-- Bootstrap JS -->
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -900,22 +920,16 @@
 	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
 	<script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+  
+	<!--Sweet Alert Hapus Penanggung Jawab -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js" defer></script>
+
 	<script>
-		$(document).ready(function() {
-			$('#example').DataTable();
-		  } );
-	</script>
-	<script>
-		$(document).ready(function() {
-			var table = $('#example2').DataTable( {
-				lengthChange: false,
-				buttons: [ 'copy', 'excel', 'pdf', 'print']
-			} );
-		 
-			table.buttons().container()
-				.appendTo( '#example2_wrapper .col-md-6:eq(0)' );
-		} );
-	</script>
+    function konfirmHapus() {
+      /* Konfirm Hapus data Penanggung Jawab */      
+      Swal.fire("Data terhapus!", "Klik OK untuk melanjutkan.", "success");
+    }
+  </script>	
 	<!--app JS-->
 	<script src="assets/js/app.js"></script>
 </body>
