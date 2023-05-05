@@ -52,6 +52,8 @@ body {
 
 }
 
+/*Multiple Select and Tracker*/
+
 
 a {
 
@@ -61,6 +63,9 @@ a {
 
 }
 
+.text-red{
+	color: #e52d27;
+}
 
 .wrapper {
 
