@@ -162,6 +162,10 @@ a {
 	margin-top: 5px
 }
 
+.border-gradient-quaple{
+	border-color: #3be2cf !important;
+}
+
 .sidebar-wrapper .metismenu li:last-child {
 	margin-bottom: 5px
 }

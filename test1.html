@@ -88,7 +88,7 @@
 		</header>
 		<!--end header -->
 		<!--navigation-->
-		<div class="nav-container">
+		<div class="nav-container bg-gradient-quepal radius-10">
 			<div class="mobile-topbar-header">
 				<div>
 					<img src="assets/app-test/assets-app/images/logo-icon.png" class="logo-icon" alt="logo icon">
@@ -98,14 +98,17 @@
 				</div>
 				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
 				</div>
-			</div>
-	   </div>
+			</div>	   
+		 <nav class="topbar-nav">
+		  <h5 class="align-items-center justify-content-center d-flex text-white small-weight"><i class="bx bx-loader-circle"></i> IST - Tes 1. Tes Koran</h5>
+		 </nav>
+		</div>
 	  <!--end header wrapper-->
 		<!--start page wrapper -->
 		<div class="page-wrapper">
 			<div class="page-content">
 				<div class="card radius-10">
-							<div class="card-body">													
+							<div class="card-body radius-10 border-gradient-quaple border-start border-0 border-3">													
 								<div class="row row-cols-auto g-3">									
 									<div class="col">
 										<div>
@@ -197,10 +200,18 @@
 									</div>
 								</div>
 								<!--end row-->								
-							</div>							
-						</div>
-			</div>
+							</div><!--end body-->							
+					</div>
 		</div>
+					<div class="row">
+					<div class="col" id="previous">
+						<button type="button" class="btn bg-gradient-quepal text-white borderless"><i class='bx bx-chevron-left bx-tada-hover'></i>Previous</button>
+					</div>					
+					<div class="col" id="next">
+						<button type="button" data-bs-toggle="modal" data-bs-target="#buttonNext" class="btn bg-gradient-quepal text-white float-right borderless">Next<i class="bx bx-chevron-right bx-tada-hover"></i></button>						
+					</div>		
+					</div>		
+	</div>
 		<!--end page wrapper -->
 		<!--start overlay-->
 		<div class="overlay toggle-icon"></div>
@@ -265,6 +276,24 @@
 		</div>
 	</div>
 	<!--end switcher-->
+
+	<!--Modal Next-->
+	<div class="modal fade" id="buttonNext" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Anda yakin untuk melanjutkan?</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">Pastikan jawaban Anda terisi dengan tepat.</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary borderless" data-bs-dismiss="modal">Tutup</button>
+					<button type="button" class="btn bg-twitter text-white borderless">Lanjut</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Bootstrap JS -->
 	<script src="assets/app-test/assets-app/js/bootstrap.bundle.min.js"></script>
 	<!--plugins-->

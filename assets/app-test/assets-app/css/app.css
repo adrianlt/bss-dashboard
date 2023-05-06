@@ -63,8 +63,16 @@ a {
 
 }
 
+.float-right{
+	float: right!important;
+}
+
 .text-red{
 	color: #e52d27;
+}
+
+.small-weight{
+	font-weight: 100 !important;
 }
 
 .wrapper {
@@ -96,6 +104,13 @@ a {
     border-right: 1px solid #f0f0f0;
 }
 
+.borderless{
+	border: none;
+}
+
+.border-gradient-quaple{
+	border-color: #25cfbb !important;
+}
 
 .logo-icon {
 	width: 50px;
