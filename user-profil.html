@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/app-test/assets-app/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
+	<link href="assets/app-test/assets-app/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/app-test/assets-app/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/app-test/assets-app/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/app-test/assets-app/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/app-test/assets-app/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/app-test/assets-app/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/app-test/assets-app/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/app-test/assets-app/css/app.css" rel="stylesheet">
+	<link href="assets/app-test/assets-app/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="assets/app-test/assets-app/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/app-test/assets-app/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/app-test/assets-app/css/header-colors.css" />
+	<title>Psikotes BSS</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+	 <!--start header wrapper-->	
+	  <div class="header-wrapper">
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="topbar-logo-header">
+						<div class="">
+							<img src="assets/app-test/assets-app/images/logo-icon.png" class="logo-icon" alt="logo icon">
+						</div>
+						<div class="">
+							<h4 class="logo-text">Psikotes</h4>
+						</div>
+					</div>
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i></div>		
+					<div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center">													
+							<li class="nav-item dropdown dropdown-large">								
+								<div class="dropdown-menu dropdown-menu-end">									
+									<div class="header-notifications-list">																							
+									</div>									
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-large">								
+								<div class="dropdown-menu dropdown-menu-end">									
+									<div class="header-message-list">																				
+									</div>									
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="user-box dropdown">
+						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/app-test/assets-app/images/avatars/profile-baru.jpg" class="user-img" alt="user avatar">
+							<div class="user-info ps-3">
+								<p class="user-name mb-0">Nikola Tesla</p>
+								<p class="designattion mb-0">Antithesis</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
+							</li>													
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--navigation-->
+		<div class="nav-container bg-gradient-quepal radius-10">
+			<div class="mobile-topbar-header">
+				<div>
+					<img src="assets/app-test/assets-app/images/logo-icon.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text">Psikotes</h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+				</div>
+			</div>	   
+		 <nav class="topbar-nav">
+		  <h5 class="align-items-center justify-content-center d-flex text-white small-weight"><i class="bx bx-loader-circle"></i> IST - Tes 1. Tes Koran</h5>
+		 </nav>
+		</div>
+	  <!--end header wrapper-->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card border-top border-0 border-4 border-special">
+							<div class="card-body">
+								<div class="d-flex flex-column align-items-center text-center avatar-upload">
+									<div class="avatar-edit"><input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+										<label for="imageUpload"></label></div>
+									<div class="avatar-preview">
+									<div alt="Admin" id="imagePreview" class="avatar-preview rounded-circle p-1 bg-light-info" style="background-image: url('assets/images/avatars/profile-baru.jpg');"></div>											
+									</div>
+									<div class="mt-3">
+										<h4>Adrian Neowise</h4>
+										<p class="text-secondary mb-1">Web Developer</p>
+										<p class="text-muted font-size-sm">@neowise77</p>											
+									</div>
+								</div>											
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="card border-top border-0 border-4 border-special">
+							<div class="card-body">
+								<div class="row mb-3">											
+									<div class="col-md-12">
+										<label for="inputFullName" class="form-label">Full Name</label>
+										<div class="input-group"> <span class="input-group-text bg-transparent"><i class='bx bxs-id-card'></i></span>
+											<input type="text" class="form-control border-start-0" id="inputFullName" placeholder="full name" />
+										</div>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-md-12">
+										<label for="inputUserName" class="form-label">Username</label>
+										<div class="input-group"> <span class="input-group-text bg-transparent"><i class='bx bxs-user'></i></span>
+											<input type="text" class="form-control border-start-0" id="inputUserName" placeholder="username" />
+										</div>
+									</div>
+								</div>										
+								<div class="row mb-3">
+									<div class="col-md-12">
+										<label for="inputPassword" class="form-label">Password</label>
+										<div class="input-group"> <span class="input-group-text bg-transparent"><i class='bx bx-key'></i></span>
+											<input type="text" class="form-control border-start-0" id="inputPassword" placeholder="password" />
+										</div>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-md-12">
+										<label for="inputPhone" class="form-label">Phone</label>
+										<div class="input-group"> <span class="input-group-text bg-transparent"><i class='bx bxs-phone'></i></span>
+											<input type="text" class="form-control border-start-0" id="inputPhone" placeholder="phone" />
+										</div>
+									</div>
+								</div>
+								<div class="row">											
+									<div class="col-sm-12 mt-3 text-secondary">
+										<a href="#" class="btn btn-primary">Simpan</a>												
+										<a href="index.html" class="btn bg-gradient-ohhappiness text-white">Back</a>												
+									</div>
+								</div>
+							</div>
+						</div>								
+					</div>
+				</div>		
+	</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright ©2023. PT Bina Sarana Sukses. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!--start switcher-->
+	<div class="switcher-wrapper">
+		<div class="switcher-btn bg-gradient-quepal"> <i class='bx bx-cookie bx-tada-hover'></i>
+		</div>
+		<div class="switcher-body">
+			<div class="d-flex align-items-center">
+				<h5 class="mb-0 text-white">Menu</h5>
+				<button type="button" class="btn-close-white ms-auto close-switcher" aria-label="Close"></button>
+			</div>			
+			<br>
+			<h6 class="mb-3 text-white">Display Mode</h6>
+			<div class="row">			
+			<div class=" align-items-center">
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked>
+					<label class="form-check-label text-white" for="lightmode">Light Mode</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
+					<label class="form-check-label text-white" for="darkmode">Dark Mode</label>
+				</div>				
+			</div>		
+		</div>			
+		</div>
+	</div>
+	<!--end switcher-->
+
+	<!--Modal Next-->
+	<div class="modal fade" id="buttonNext" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Anda yakin untuk melanjutkan?</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">Pastikan jawaban Anda terisi dengan tepat.</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary borderless" data-bs-dismiss="modal">Tutup</button>
+					<button type="button" class="btn bg-twitter text-white borderless">Lanjut</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="assets/app-test/assets-app/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/app-test/assets-app/js/jquery.min.js"></script>
+	<script src="assets/app-test/assets-app/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/app-test/assets-app/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/app-test/assets-app/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/app-test/assets-app/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+  <script src="assets/app-test/assets-app/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="assets/app-test/assets-app/plugins/chartjs/js/Chart.min.js"></script>
+	<script src="assets/app-test/assets-app/plugins/chartjs/js/Chart.extension.js"></script>
+	<script src="assets/app-test/assets-app/js/index.js"></script>
+	<!--app JS-->
+	<script src="assets/app-test/assets-app/js/app.js"></script>
+</body>
+
+</html>
