@@ -229,50 +229,78 @@
 		</div>
 		<div class="switcher-body">
 			<div class="d-flex align-items-center">
-				<h5 class="mb-0">Answer Tracker</h5>
-				<button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
-			</div>						
-			<hr/>
+				<h5 class="mb-0 text-white">Menu</h5>
+				<button type="button" class="btn-close-white ms-auto close-switcher" aria-label="Close"></button>
+			</div>
+			<br>
+			<h6 class="mb-0 text-white">Answer Tracker</h6>								
 			<div class="header-colors-indigators text-white">
 				<div class="row row-cols-auto g-3">
-					<div class="col">
-						<div class="btn-group" role="group" aria-label="First group">
-							<button type="button" class="btn btn-outline-primary">1</button>
-							<button type="button" class="btn btn-outline-primary">2</button>
-							<button type="button" class="btn btn-outline-primary">3</button>
-							<button type="button" class="btn btn-outline-primary">4</button>
-							<button type="button" class="btn btn-outline-primary">5</button>
-						</div>
-					</div>
-					<div class="col">
-						<div class="btn-group" role="group" aria-label="First group">
-							<button type="button" class="btn btn-outline-primary">6</button>
-							<button type="button" class="btn btn-outline-primary">7</button>
-							<button type="button" class="btn btn-outline-primary">8</button>
-							<button type="button" class="btn btn-outline-primary">9</button>
-							<button type="button" class="btn btn-outline-primary">10</button>
-						</div>
-					</div>
-					<div class="col">
-						<div class="btn-group" role="group" aria-label="First group">
-							<button type="button" class="btn btn-outline-primary">11</button>
-							<button type="button" class="btn btn-outline-primary">12</button>
-							<button type="button" class="btn btn-outline-primary">13</button>
-							<button type="button" class="btn btn-outline-primary">14</button>
-							<button type="button" class="btn btn-outline-primary">15</button>
-						</div>
-					</div>
-					<div class="col">
-						<div class="btn-group" role="group" aria-label="First group">
-							<button type="button" class="btn btn-outline-primary">16</button>
-							<button type="button" class="btn btn-outline-primary">17</button>
-							<button type="button" class="btn btn-outline-primary">18</button>
-							<button type="button" class="btn btn-outline-primary">19</button>
-							<button type="button" class="btn btn-outline-primary">20</button>
-						</div>
-					</div>
+					<div>
+            <form class="greatForm">
+              <input type="checkbox" name="check" id="check1" value="1" />
+              <label for="check1">01</label>
+              <input type="checkbox" name="check" id="check2" value="2" />
+              <label for="check2">02</label>
+              <input type="checkbox" name="check" id="check3" value="3" />
+              <label for="check3">03</label>
+              <input type="checkbox" name="check" id="check4" value="4" />
+              <label for="check4">04</label>
+              <input type="checkbox" name="check" id="check5" value="5" />
+              <label for="check5">05</label> <br>
+              <input type="checkbox" name="check" id="check6" value="6" />
+              <label for="check6">06</label>
+              <input type="checkbox" name="check" id="check7" value="7" />
+              <label for="check7">07</label>
+              <input type="checkbox" name="check" id="check8" value="8" />
+              <label for="check8">08</label>
+              <input type="checkbox" name="check" id="check9" value="9" />
+              <label for="check9">09</label>
+              <input type="checkbox" name="check" id="check10" value="10" />
+              <label for="check10">10</label><br>
+              <input type="checkbox" name="check" id="check11" value="11" />
+              <label for="check11">11</label>
+              <input type="checkbox" name="check" id="check12" value="12" />
+              <label for="check12">12</label>
+              <input type="checkbox" name="check" id="check13" value="13" />
+              <label for="check13">13</label>
+              <input type="checkbox" name="check" id="check14" value="14" />
+              <label for="check14">14</label>
+              <input type="checkbox" name="check" id="check15" value="15" />
+              <label for="check15">15</label><br>
+              <input type="checkbox" name="check" id="check16" value="16" />
+              <label for="check16">16</label>
+              <input type="checkbox" name="check" id="check17" value="17" />
+              <label for="check17">17</label>
+              <input type="checkbox" name="check" id="check18" value="18" />
+              <label for="check18">18</label>
+              <input type="checkbox" name="check" id="check19" value="19" />
+              <label for="check19">19</label>
+              <input type="checkbox" name="check" id="check20" value="20" />
+              <label for="check20">20</label>
+            </form>
+            <br>
+            <div>
+						<h6 class="mb-3 text-white">Notes</h6>
+						<label class="text-white"><span class="radius-10" style="background-color: #39b993; color:#39b993;">HH</span> = Sudah Dijawab</label>
+            <label class="text-white mt-3"><span class="radius-10" style="background-color: #F05138; color:#F05138;">HH</span> = Belum Dijawab</label></div>
+          </div><!-- media-list -->
 				</div>
-			</div>			
+			</div>
+			<br>
+			<h6 class="mb-3 text-white">Display Mode</h6>
+			<div class="row">			
+			<div class=" align-items-center">
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked>
+					<label class="form-check-label text-white" for="lightmode">Light Mode</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
+					<label class="form-check-label text-white" for="darkmode">Dark Mode</label>
+				</div>				
+			</div>		
+		</div>			
 		</div>
 	</div>
 	<!--end switcher-->
