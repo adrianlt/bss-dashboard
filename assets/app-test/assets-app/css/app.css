@@ -3873,7 +3873,7 @@ a {
 .bg-lock-screen {
 
 
-	background-image: url(../images/login-images/bg-lock-screen.jpg);
+	background-image: url(../images/login-images/bg-login-img.jpg);
 
 
 	background-size: cover;
@@ -3889,6 +3889,16 @@ a {
 
 
 }
+
+.bg-lock-screen .card{
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.11);
+	}
 
 
 .login-separater span {
@@ -3942,6 +3952,31 @@ a {
 	margin-right: 5px;
 
 
+}
+
+.btn-modified {
+	width: 300px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+	background-color: #54d4c3;
+  border: none;
+  border-radius: 10px;
+	box-shadow: 0px 8px 15px rgba(55, 233, 224, 0.377);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-modified:hover {
+  background-color: #5565ee;
+	box-shadow: 0px 15px 20px rgba(79, 109, 241, 0.4);  
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 

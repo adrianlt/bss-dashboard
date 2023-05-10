@@ -73,7 +73,7 @@
 						<ul class="dropdown-menu dropdown-menu-end">
 							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
 							</li>													
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							<li><a class="dropdown-item" href="login-test.html"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
 							</li>
 						</ul>
 					</div>
@@ -94,7 +94,7 @@
 				</div>
 			</div>	   
 		 <nav class="topbar-nav">
-		  <h5 class="align-items-center justify-content-center d-flex text-white small-weight"><i class="bx bx-loader-circle"></i> IST - Tes 1. Tes Koran</h5>
+		  <h5 class="align-items-center justify-content-center d-flex text-white small-weight"><i class="bx bx-user"></i> Edit Profile</h5>
 		 </nav>
 		</div>
 	  <!--end header wrapper-->
@@ -103,8 +103,8 @@
 			<div class="page-content">
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="card border-top border-0 border-4 border-special">
-							<div class="card-body">
+						<div class="card radius-10">
+							<div class="card-body radius-10 border-gradient-quaple border-start border-0 border-3">
 								<div class="d-flex flex-column align-items-center text-center avatar-upload">
 									<div class="avatar-edit"><input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
 										<label for="imageUpload"></label></div>
@@ -121,8 +121,8 @@
 						</div>
 					</div>
 					<div class="col-lg-8">
-						<div class="card border-top border-0 border-4 border-special">
-							<div class="card-body">
+						<div class="card radius-10">
+							<div class="card-body radius-10 border-gradient-quaple border-end border-0 border-3">
 								<div class="row mb-3">											
 									<div class="col-md-12">
 										<label for="inputFullName" class="form-label">Full Name</label>
@@ -157,8 +157,8 @@
 								</div>
 								<div class="row">											
 									<div class="col-sm-12 mt-3 text-secondary">
-										<a href="#" class="btn btn-primary">Simpan</a>												
-										<a href="index.html" class="btn bg-gradient-ohhappiness text-white">Back</a>												
+										<button type="button" data-bs-toggle="modal" data-bs-target="#buttonNext" class="btn btn-primary borderless">Simpan</button>																		
+										<a href="test1.html" class="btn bg-gradient-ohhappiness text-white">Back</a>												
 									</div>
 								</div>
 							</div>
@@ -209,13 +209,13 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Anda yakin untuk melanjutkan?</h5>
+					<h5 class="modal-title">Anda yakin untuk memperbarui profil anda?</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-				<div class="modal-body">Pastikan jawaban Anda terisi dengan tepat.</div>
+				<div class="modal-body">Pastikan data yang diperbarui sudah tepat.</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary borderless" data-bs-dismiss="modal">Tutup</button>
-					<button type="button" class="btn bg-twitter text-white borderless">Lanjut</button>
+					<a href="test1.html"><button type="button" class="btn bg-twitter text-white borderless">Lanjut</button></a>
 				</div>
 			</div>
 		</div>
